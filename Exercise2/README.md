@@ -1,7 +1,7 @@
 其實切分index方式有很多  
 我在這段script中有兩種，其中一些注解掉了，目前用的是世晟的方法  
 也就是這段  
-# index number in test  
+#index number in test  
 其實我下面這樣的也是可以，如果採用請再進行修改，test_indexs = random.sample(range(133885), int(133885/10))，這邊已經對檔案給下標了
 剩下的只是append一個值回去而已  
 #append number into test set  

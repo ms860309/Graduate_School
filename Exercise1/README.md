@@ -6,9 +6,9 @@
 InChI在 line[-1]但是他有兩種，我們要取的應該是第二個，問題會出現在以下範例  
 
 dsgdb9nsd_000047.xyz  
-InChI=1S/C4H8/c1-2-4-3-1/h1-4H2	InChI=1S/*C4H8*/c1-2-4-3-1/h1-4H2  
+InChI=1S/C4H8/c1-2-4-3-1/h1-4H2	InChI=1S/**C4H8**/c1-2-4-3-1/h1-4H2  
 dsgdb9nsd_000001.xyz  
-InChI=1S/CH4/h1H4	InChI=1S/*CH4*/h1H4  
+InChI=1S/CH4/h1H4	InChI=1S/**CH4**/h1H4  
 
 我們要取的是** quote起來部分，script中以/做split，第一個例子C4H8在[5]，第二個例子卻是[4]  
 解決方法:  

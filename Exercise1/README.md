@@ -10,7 +10,7 @@ InChI=1S/C4H8/c1-2-4-3-1/h1-4H2	InChI=1S/**C4H8**/c1-2-4-3-1/h1-4H2
 dsgdb9nsd_000001.xyz  
 InChI=1S/CH4/h1H4	InChI=1S/**CH4**/h1H4  
 
-我們要取的是** quote起來部分，script中以/做split，第一個例子C4H8在[5]，第二個例子卻是[4]  
+我們要取的是粗體 quote起來部分，script中以/做split，第一個例子C4H8在[5]，第二個例子卻是[4]  
 解決方法:  
 只給提示跟思路，取line[2]:[-3]計算所列出的所有element，同時也省去判斷InChI  
 

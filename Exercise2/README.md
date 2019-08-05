@@ -22,3 +22,14 @@ loss, acc = model.evaluate(x_test, y_test, batch_size=256)
 model.compile(loss='mean_squared_error', optimizer=sgd, metrics = ['accuracy'])   
 後面的metrics為必須  
 
+後記：
+如果你SMILES要分開存其實可以，這樣會比較快不用每次重新跑，那這時候你就要考慮你存檔方式  
+假設你是這樣  
+SMILES1   
+SMILES2   
+....   
+也就是以/n做切分，那你讀檔沒問題後面可以直接走  
+但是有時候為了方便你把smiles存成list也就是 [SMILES1, SMILES2, ...]  
+這時候就要考慮是不是不用readline**s** 只需要readline讀一行就好  
+
+
